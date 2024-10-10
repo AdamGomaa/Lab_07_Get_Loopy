@@ -10,7 +10,6 @@ public class Die_Roller {
             die3 = gen.nextInt(6) + 1;
             dieRoll++;
             System.out.printf("%6d\t%4d\t%4d\t%4d\n", dieRoll, die1, die2, die3);
-            System.out.println("test");
         } while (!(die1 == die2 && die2 == die3));
     }
 }
