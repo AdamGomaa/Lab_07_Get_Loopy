@@ -4,12 +4,13 @@ public class Die_Roller {
         Random gen = new Random();
         int die1, die2, die3 = 0;
         int dieRoll = 0;
-        do{
+        do {
             die1 = gen.nextInt(6) + 1;
             die2 = gen.nextInt(6) + 1;
             die3 = gen.nextInt(6) + 1;
             dieRoll++;
-            System.out.printf("%6d\t%4d\t%4d\t%4d\n",dieRoll,die1,die2,die3);
-        }while(!(die1==die2 && die2 == die3));
+            System.out.printf("%6d\t%4d\t%4d\t%4d\n", dieRoll, die1, die2, die3);
+            System.out.println("test");
+        } while (!(die1 == die2 && die2 == die3));
     }
 }
